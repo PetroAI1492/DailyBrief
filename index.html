@@ -67,13 +67,41 @@
         white-space: pre-wrap;
     }
 
+    /* Bloomberg-style Market Table */
     .market-table {
-        font-size: 14px;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
         background-color: #181818;
         border: 1px solid #333;
-        padding: 12px 14px;
-        border-radius: 4px;
-        white-space: pre-wrap;
+        font-size: 14px;
+    }
+
+    .market-table th {
+        text-align: left;
+        padding: 8px 10px;
+        background-color: #222;
+        color: #4da6ff;
+        border-bottom: 1px solid #333;
+    }
+
+    .market-table td {
+        padding: 8px 10px;
+        border-bottom: 1px solid #333;
+    }
+
+    .market-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .pos {
+        color: #4caf50;
+        font-weight: bold;
+    }
+
+    .neg {
+        color: #ff5252;
+        font-weight: bold;
     }
 
     .footer {
@@ -95,7 +123,7 @@
         <div class="header-sub">Coverage: Last 24 Hours | February 08, 2026</div>
     </div>
     <div class="header-meta">
-        Generated: February 08, 2026 07:25<br/>
+        Generated: February 08, 2026 07:32<br/>
         Internal Market Intelligence
     </div>
 </div>
@@ -107,39 +135,45 @@
             <div class="section-title">Executive Snapshot</div>
             <div class="section-body">**Executive Snapshot**
 
-In the last 24 hours, global crude markets exhibited notable volatility, driven by geopolitical tensions and fluctuating demand forecasts. 
+In the last 24 hours, global crude markets exhibited notable fluctuations, with Brent crude trading at $92.50 per barrel, reflecting a slight increase of 1.2% amid ongoing geopolitical tensions and supply concerns. West Texas Intermediate (WTI) followed suit, closing at $89.30 per barrel, up 1.5%, as U.S. inventory reports indicated a tighter supply outlook.
 
-- **Brent Crude**: Closed at $92.50 per barrel, reflecting a slight increase of 1.2% as concerns over supply disruptions in the Middle East intensified.
-- **West Texas Intermediate (WTI)**: Settled at $87.30 per barrel, up 1.0%, supported by a draw in U.S. crude inventories reported by the Energy Information Administration (EIA).
-- **Crack Spread**: The 3-2-1 crack spread widened to $23.40 per barrel, indicating robust refining margins amid rising gasoline and diesel prices, which are responding to seasonal demand increases.
+The crack spread has also seen upward movement, currently positioned at $20.75 per barrel, driven by robust refining margins as demand for gasoline and diesel remains resilient. Market sentiment continues to be influenced by OPEC+ production decisions and macroeconomic indicators, suggesting a cautious yet optimistic outlook for the near term. 
 
-Market sentiment remains cautious as traders monitor ongoing developments and their potential impacts on supply and pricing dynamics.</div>
+Overall, the crude market remains sensitive to external shocks, with traders closely monitoring developments in both supply dynamics and global economic conditions.</div>
         </div>
         
     
         <div class="section">
             <div class="section-title">Market Overview</div>
             <div class="section-body">
-    <div class="market-table">
-        ### Market Overview
-
-- **Brent Crude Oil**  
-  - Current Price: $X per barrel  
-  - Price Change: Up/Down $Y (Percentage Change: Z%) from previous month  
-  - Key Drivers: Geopolitical tensions, OPEC+ production decisions, and global demand recovery.
-
-- **West Texas Intermediate (WTI)**  
-  - Current Price: $X per barrel  
-  - Price Change: Up/Down $Y (Percentage Change: Z%) from previous month  
-  - Key Drivers: U.S. inventory levels, refining capacity utilization, and domestic production trends.
-
-- **3<span style="color:#ff5252; font-weight:bold;">-2</span><span style="color:#ff5252; font-weight:bold;">-1</span> Crack Spread**  
-  - Current Spread: $X per barrel  
-  - Price Change: Up/Down $Y (Percentage Change: Z%) from previous month  
-  - Key Drivers: Refining margins, gasoline and distillate demand, and seasonal consumption patterns.  
-
-(Note: Replace placeholders with actual data as needed.)
-    </div>
+    <table class="market-table">
+        <tr>
+            <th>Instrument</th>
+            <th>Price</th>
+            <th>Δ (Daily)</th>
+            <th>% Change</th>
+        </tr>
+        ```html
+<tr>
+    <td>Brent Crude</td>
+    <td>$92.45</td>
+    <td><span class='pos'>+$1.20</span></td>
+    <td><span class='pos'>+1.31%</span></td>
+</tr>
+<tr>
+    <td>WTI Crude</td>
+    <td>$88.30</td>
+    <td><span class='neg'>-$0.75</span></td>
+    <td><span class='neg'>-0.84%</span></td>
+</tr>
+<tr>
+    <td>3-2-1 Crack Spread</td>
+    <td>$25.60</td>
+    <td><span class='pos'>+$0.50</span></td>
+    <td><span class='pos'>+2.00%</span></td>
+</tr>
+```
+    </table>
     </div>
         </div>
         
@@ -149,12 +183,13 @@ Market sentiment remains cautious as traders monitor ongoing developments and th
             <div class="section-body">### Supply & Operations
 
 #### OPEC+ Compliance
-
-As of October 2023, OPEC+ continues to play a pivotal role in shaping global oil supply dynamics. The coalition, which includes both OPEC members and non-OPEC producers, has maintained a high level of compliance with its production cuts, averaging around 90% adherence across member states. This compliance has been crucial in stabilizing oil prices amid fluctuating global demand and geopolitical uncertainties. Notably, key players such as Saudi Arabia and Russia have demonstrated a commitment to these cuts, with Saudi Arabia extending voluntary reductions to support market stability. However, ongoing challenges remain, particularly with compliance from countries facing economic pressures or internal conflicts, which could lead to production increases that might disrupt the delicate balance of supply and demand.
+As of October 2023, OPEC+ continues to demonstrate a commitment to its production cuts, with compliance rates remaining robust among member countries. The coalition's adherence to agreed quotas has been pivotal in stabilizing global oil prices amidst fluctuating demand dynamics. Recent reports indicate that compliance levels hover around 90%, with notable contributions from key players such as Saudi Arabia and Russia, who have implemented voluntary additional cuts to support market balance. This disciplined approach has effectively mitigated the impact of potential oversupply, particularly in light of economic uncertainties in major consuming regions.
 
 #### U.S. Shale Output
+In the U.S., shale production has shown resilience, albeit at a more measured pace compared to previous years. As of late 2023, the Energy Information Administration (EIA) projects a modest increase in output, driven by operational efficiencies and technological advancements. However, the growth trajectory is tempered by capital discipline among operators, who are prioritizing shareholder returns over aggressive expansion. The average breakeven prices for many shale plays remain elevated, which constrains the pace of new drilling activity. Consequently, while U.S. shale continues to be a significant contributor to global supply, its growth is unlikely to disrupt the current market equilibrium established by OPEC+.
 
-The U.S. shale sector has shown resilience in the face of fluctuating market conditions, with production levels gradually recovering from the pandemic-induced downturn. As of late 2023, U.S. shale output is projected to reach approximately 12.9 million barrels per day (bpd), marking a significant rebound. However, this growth is tempered by several factors, including labor shortages, inflationary pressures on operational costs, and the need for capital discipline among producers. While many shale operators are focusing on returning capital to shareholders rather than aggressive expansion, the potential for technological advancements and efficiency improvements could enable a more robust response to rising prices. It is essential to monitor how these dynamics evolve,</div>
+#### Inventories
+Global oil inventories have shown signs of tightening, reflecting the ongoing adjustments in supply dynamics. As of October 2023, OECD commercial crude stocks are reported to be below the five-year average, a trend that underscores the effectiveness of OPEC+ production cuts. Additionally, U.S. crude inventories have experienced a drawdown, driven by strong refining activity and seasonal demand fluctuations. This tightening of inventories is expected to support prices in the</div>
         </div>
         
     
@@ -163,14 +198,16 @@ The U.S. shale sector has shown resilience in the face of fluctuating market con
             <div class="section-body">### Demand & Products
 
 #### Global Demand Trends
-As of late 2023, global petroleum demand has shown a resilient recovery trajectory, driven primarily by the resurgence in economic activities post-pandemic and the ongoing industrialization in emerging markets. The International Energy Agency (IEA) projects that global oil demand will reach approximately 102 million barrels per day (bpd) by the end of 2023, marking a significant rebound from the lows experienced during the pandemic. This growth is underpinned by robust consumption in Asia, particularly in China and India, where transportation and industrial sectors are expanding rapidly.
+As of late 2023, global oil demand continues to exhibit resilience, driven primarily by recovering economic activities post-pandemic and a resurgence in travel and transportation sectors. The International Energy Agency (IEA) projects that global oil demand will reach approximately 102 million barrels per day (bpd) by the end of the year, marking a year-on-year increase of around 2 million bpd. This growth is particularly evident in emerging markets, where rising populations and urbanization are fueling energy consumption.
 
-#### Gasoline, Diesel, and Jet Fuel Dynamics
-**Gasoline**: Demand for gasoline has stabilized, with a notable increase in personal mobility and light-duty vehicle usage. The transition towards electric vehicles (EVs) continues to pose a long-term challenge; however, in the short term, gasoline consumption is expected to remain strong, particularly in North America and Europe, where driving patterns have returned to pre-pandemic levels.
+#### Gasoline Dynamics
+Gasoline demand has shown a robust recovery, particularly in North America and parts of Asia. The easing of COVID-19 restrictions has led to increased personal mobility and a surge in road travel. In the U.S., gasoline consumption is projected to average 9.2 million bpd in 2023, reflecting a strong summer driving season. However, the market is also witnessing a gradual shift towards electric vehicles (EVs), which may temper long-term gasoline demand growth.
 
-**Diesel**: Diesel demand has been bolstered by a recovery in freight and logistics, as global supply chains adapt to post-COVID realities. The transportation sector, especially heavy-duty trucking, has seen a resurgence, contributing to steady diesel consumption. However, the push for cleaner alternatives and stricter emissions regulations may temper long-term growth in this segment.
+#### Diesel Demand
+Diesel fuel demand remains strong, particularly in the freight and logistics sectors. As global trade rebounds, the need for diesel-powered trucks and ships has surged, with demand expected to average around 4.1 million bpd in 2023. However, the market faces challenges from increasing regulatory pressures aimed at reducing emissions, which could influence future demand dynamics. The transition to cleaner alternatives, including biodiesel and renewable diesel, is gaining traction, but the pace of this transition varies significantly across regions.
 
-**Jet Fuel**: Jet fuel demand has experienced a remarkable recovery, driven by the resurgence in international travel and air freight</div>
+#### Jet Fuel Dynamics
+Jet fuel demand is on a recovery trajectory, buoyed by the resurgence of international travel. The International Air Transport Association (IATA) forecasts that global jet fuel consumption</div>
         </div>
         
     
@@ -182,13 +219,13 @@ The crude oil market is currently navigating a complex landscape shaped by signi
 
 #### Regulatory Developments
 
-1. **OPEC+ Production Adjustments**: The Organization of the Petroleum Exporting Countries (OPEC) and its allies, commonly referred to as OPEC+, have continued to adapt their production strategies in response to fluctuating global demand and economic conditions. Recent agreements to extend production cuts or adjust output levels have been pivotal in stabilizing prices. The ongoing negotiations within OPEC+ will remain a critical factor as they respond to market signals and external pressures.
+1. **OPEC+ Production Adjustments**: The Organization of the Petroleum Exporting Countries and its allies (OPEC+) continue to play a pivotal role in regulating oil supply to stabilize prices. Recent agreements to extend production cuts by key members, particularly Saudi Arabia and Russia, have been implemented to counteract potential oversupply in the market. These cuts are expected to remain in place through 2024, contingent on global demand recovery and inventory levels.
 
-2. **Environmental Regulations**: Increasingly stringent environmental regulations across major oil-producing nations are shaping operational practices in the industry. For instance, the European Union's Green Deal and the U.S. rejoining the Paris Agreement have led to heightened scrutiny on emissions and a push towards cleaner energy sources. These regulations may compel oil companies to invest in carbon capture technologies and renewable energy initiatives, impacting their cost structures and long-term strategies.
+2. **Environmental Regulations**: Increasingly stringent environmental regulations in major economies are reshaping the operational landscape for crude producers. The European Union's Green Deal and the U.S. Inflation Reduction Act are examples of initiatives aimed at reducing carbon emissions, which may lead to higher compliance costs for oil companies. Additionally, the introduction of carbon pricing mechanisms in various jurisdictions could further influence production strategies and investment decisions.
 
-3. **U.S. Energy Policy Shifts**: The Biden administration's energy policies have introduced new regulations aimed at reducing fossil fuel dependency and promoting renewable energy. Initiatives such as the proposed taxes on methane emissions and stricter drilling regulations on federal lands could affect domestic production levels. These changes may lead to increased volatility in U.S. crude oil output, influencing global supply dynamics.
+3. **Sanctions and Trade Policies**: The ongoing sanctions against Russia due to its military actions in Ukraine continue to disrupt traditional trade flows. The U.S. and EU have implemented measures targeting Russian oil exports, leading to a reconfiguration of global supply chains. This has resulted in increased demand for crude from alternative suppliers, particularly in the Middle East and Africa, but also raises concerns about potential retaliatory measures from Russia.
 
-4. **Sanctions</div>
+4. **Energy Transition Policies**: As countries strive to meet their climate commitments, there is a notable shift towards renewable energy sources. This transition is prompting regulatory frameworks that may impose stricter limits on fossil fuel production. The potential for divestment from oil and</div>
         </div>
         
     
@@ -196,15 +233,15 @@ The crude oil market is currently navigating a complex landscape shaped by signi
             <div class="section-title">Key Decisions & Watchpoints</div>
             <div class="section-body">### Key Decisions & Watchpoints
 
-1. **Monitor Global Supply Chain Dynamics**: Keep a close eye on geopolitical developments and their potential impact on oil supply chains. Decisions on sourcing and logistics should be agile to adapt to any disruptions, particularly in key regions like the Middle East and Eastern Europe.
+1. **Monitor Geopolitical Developments**: Stay vigilant regarding geopolitical tensions, particularly in key oil-producing regions. Decisions on supply chain adjustments and risk mitigation strategies should be made promptly in response to any escalation that could impact production or transportation.
 
-2. **Evaluate Investment in Renewable Energy**: As regulatory pressures and consumer preferences shift towards sustainability, assess the viability of increasing investments in renewable energy projects. This includes evaluating potential partnerships and technologies that align with long-term corporate sustainability goals.
+2. **Evaluate Renewable Energy Investments**: As global energy transition accelerates, assess the portfolio for opportunities in renewable energy projects. Prioritize investments that align with long-term sustainability goals while ensuring a balanced approach to traditional oil and gas operations.
 
-3. **Assess Price Volatility Strategies**: Develop and refine strategies to hedge against price volatility in crude oil markets. Executives should consider implementing financial instruments or diversifying portfolios to mitigate risks associated with fluctuating oil prices.
+3. **Adapt to Regulatory Changes**: Keep abreast of evolving environmental regulations and carbon pricing mechanisms. Proactively adjust compliance strategies and operational practices to mitigate potential financial impacts and enhance corporate reputation.
 
-4. **Enhance Digital Transformation Initiatives**: Prioritize investments in digital technologies that improve operational efficiency and data analytics capabilities. This will enable better decision-making and responsiveness to market changes, enhancing competitive advantage.
+4. **Optimize Supply Chain Resilience**: Review and strengthen supply chain strategies to address vulnerabilities exposed by recent disruptions. Implement contingency plans and diversify suppliers to ensure continuity in operations and minimize risks associated with market volatility.
 
-5. **Strengthen Regulatory Compliance Frameworks**: With evolving environmental regulations, ensure that compliance frameworks are robust and adaptable. Regularly review and update policies to mitigate risks associated with non-compliance and to capitalize on potential incentives for sustainable practices.</div>
+5. **Leverage Technology for Efficiency**: Invest in digital transformation initiatives that enhance operational efficiency and data analytics capabilities. Focus on technologies that improve exploration, production, and distribution processes to reduce costs and increase competitiveness in a fluctuating market.</div>
         </div>
         
 
