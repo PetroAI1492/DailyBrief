@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Petroleum Morning Brief – Last 24 Hours</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 16px 40px 16px;
+      background-color: #ffffff;
+    }
+    .header {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .header-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #003366;
+    }
+    .header-subtitle {
+      font-size: 12px;
+      color: #666666;
+      margin-top: 4px;
+    }
+    .section {
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #003366;
+      border-left: 4px solid #003366;
+      padding-left: 8px;
+      margin-bottom: 6px;
+    }
+    .section-body {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .grid th {
+      text-align: left;
+      padding: 4px 6px;
+      background-color: #e6ecf2;
+      border-bottom: 1px solid #c5d0dd;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .grid td {
+      padding: 4px 6px;
+      border-bottom: 1px solid #e1e5ea;
+    }
+    .highlight {
+      color: #b30000;
+      font-weight: bold;
+    }
+    .ok {
+      color: #007700;
+      font-weight: bold;
+    }
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      font-size: 11px;
+      border-radius: 3px;
+      background-color: #f0f3f7;
+      color: #333333;
+      margin-right: 4px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: #777777;
+      border-top: 1px solid #e1e5ea;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-title">Petroleum Morning Brief</div>
+      <div class="header-subtitle">
+        Coverage: Last 24 Hours | Prepared for: Executive Review | As of: <!-- INSERT TIMESTAMP -->
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Executive snapshot</div>
+      <div class="section-body">
+        Global crude prices are stable to slightly higher with modest risk-on sentiment. Refining margins remain positive but off recent highs. No immediate threats to physical supply, though geopolitical risk remains elevated in key producing regions. Overnight operations were largely normal with one notable disruption flagged below.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Market overview</div>
+      <table class="grid">
+        <tr>
+          <th>Benchmark</th>
+          <th>Last</th>
+          <th>24h Change</th>
+          <th>Comment</th>
+        </tr>
+        <tr>
+          <td>Brent Front Month</td>
+          <td><!-- e.g. $82.40/bbl --></td>
+          <td class="highlight"><!-- e.g. +$0.65 (+0.8%) --></td>
+          <td>Supported by supply concerns and firm product demand.</td>
+        </tr>
+        <tr>
+          <td>WTI Front Month</td>
+          <td><!-- e.g. $78.10/bbl --></td>
+          <td><!-- e.g. +$0.40 (+0.5%) --></td>
+          <td>Tracks Brent; domestic balances remain comfortable.</td>
+        </tr>
+        <tr>
+          <td>Key Crack Spread (3-2-1)</td>
+          <td><!-- e.g. $18.50/bbl --></td>
+          <td><!-- e.g. -$0.60 --></td>
+          <td>Margins slightly softer but still economically attractive.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Supply and operations</div>
+      <table class="grid">
+        <tr>
+          <th>Asset / Region</th>
+          <th>Status</th>
+          <th>Impact</th>
+          <th>Action / Note</th>
+        </tr>
+        <tr>
+          <td>Upstream – Core Fields</td>
+          <td class="ok">Normal</td>
+          <td>No material production loss reported.</td>
+          <td>Continue standard monitoring; no escalation required.</td>
+        </tr>
+        <tr>
+          <td>Refining – Major Complex A</td>
+          <td class="highlight">Minor Disruption</td>
+          <td>Throughput reduced by <!-- e.g. 3–5% --> for unplanned maintenance.</td>
+          <td>Expected resolution within <!-- e.g. 24–48 hours -->; product supply covered via inventory.</td>
+        </tr>
+        <tr>
+          <td>Logistics – Export Terminals</td>
+          <td class="ok">Stable</td>
+          <td>Loadings on schedule; no weather-related delays.</td>
+          <td>Maintain current shipping program; no rerouting required.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Demand and products</div>
+      <div class="section-body">
+        Refined product demand over the last 24 hours was broadly in line with seasonal expectations. Transportation fuels show steady offtake with modest strength in diesel for industrial and freight activity. Jet fuel demand remains firm on sustained travel volumes. Retail pricing is stable with no significant competitive pressure requiring immediate response.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Regulatory and geopolitical</div>
+      <table class="grid">
+        <tr>
+          <th>Item</th>
+          <th>Region</th>
+          <th>Risk Level</th>
+          <th>Executive Note</th>
+        </tr>
+        <tr>
+          <td>New policy or sanction discussion</td>
+          <td><!-- e.g. Middle East, Europe, etc. --></td>
+          <td class="highlight"><!-- e.g. Elevated --></td>
+          <td>Monitor for potential impact on crude flows and pricing; no immediate operational change required.</td>
+        </tr>
+        <tr>
+          <td>Environmental / safety update</td>
+          <td><!-- e.g. Domestic operations --></td>
+          <td><!-- e.g. Moderate --></td>
+          <td>Compliance timelines remain unchanged; internal teams aligned with current requirements.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Key decisions and watchpoints</div>
+      <div class="section-body">
+        Maintain current production and export plans; no immediate volume adjustments are recommended based on the last 24 hours. Closely watch the unplanned maintenance at Major Complex A and confirm restoration timeline in today’s operations call. Track ongoing geopolitical developments in sensitive producing regions for any sign of escalation that could alter price or supply outlook. Reassess margin environment and product pricing strategy if crack spreads continue to soften beyond today’s levels.
+      </div>
+    </div>
+
+    <div class="footer">
+      Prepared for internal executive use only. Figures are indicative and subject to intraday revision. For detailed operational or trading data, refer to the full dashboards and desk reports.
+    </div>
+  </div>
+</body>
+</html>
