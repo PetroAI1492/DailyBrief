@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Petroleum Morning Brief</title>
+
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -12,60 +13,203 @@
         margin: 0;
         padding: 0;
     }
+
     .header {
         background-color: #000;
-        padding: 20px;
+        padding: 22px 28px;
         border-bottom: 2px solid #4da6ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
+
     .header-title {
-        font-size: 26px;
+        font-size: 28px;
         font-weight: bold;
         color: #4da6ff;
     }
+
     .header-sub {
-        font-size: 12px;
+        font-size: 13px;
         color: #aaa;
         margin-top: 4px;
     }
+
+    .header-meta {
+        font-size: 11px;
+        color: #888;
+        text-align: right;
+    }
+
     .container {
         max-width: 900px;
         margin: 0 auto;
-        padding: 24px;
+        padding: 28px;
     }
+
+    .section {
+        margin-bottom: 32px;
+    }
+
     .section-title {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
         color: #4da6ff;
-        margin-top: 24px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         border-left: 4px solid #4da6ff;
-        padding-left: 8px;
+        padding-left: 10px;
         text-transform: uppercase;
     }
+
     .section-body {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 1.55;
+        white-space: pre-wrap;
     }
+
+    .market-table {
+        font-size: 14px;
+        background-color: #181818;
+        border: 1px solid #333;
+        padding: 12px 14px;
+        border-radius: 4px;
+        white-space: pre-wrap;
+    }
+
     .footer {
         margin-top: 40px;
         font-size: 11px;
         color: #777;
         border-top: 1px solid #333;
-        padding-top: 10px;
+        padding: 12px;
         text-align: center;
     }
 </style>
 </head>
+
 <body>
 
 <div class="header">
-    <div class="header-title">Petroleum Morning Brief</div>
-    <div class="header-sub">Coverage: Last 24 Hours | Prepared for Executive Review</div>
+    <div>
+        <div class="header-title">Petroleum Morning Brief</div>
+        <div class="header-sub">Coverage: Last 24 Hours | February 07, 2026</div>
+    </div>
+    <div class="header-meta">
+        Generated: February 07, 2026 23:58<br/>
+        Internal Market Intelligence
+    </div>
 </div>
 
 <div class="container">
-    <div class="section-title">**Petroleum Morning Brief**</div><div class="section-title">*Date: [Insert Date]*</div><div class="section-body">---</div><div class="section-title">**1. Executive Snapshot**</div><div class="section-body">As of this morning, global oil prices are experiencing slight fluctuations amid ongoing geopolitical tensions and mixed economic signals. Brent crude is trading at approximately $90.50 per barrel, while West Texas Intermediate (WTI) is at $86.00 per barrel. The 3-2-1 crack spread remains robust at $18.50, reflecting strong refining margins. Market participants are closely monitoring supply chain dynamics and regulatory developments that could impact future pricing.</div><div class="section-body">---</div><div class="section-title">**2. Market Overview**</div><div class="section-body">- **Brent Crude**: $90.50/bbl (+0.5% from previous close)</div><div class="section-body">- **WTI Crude**: $86.00/bbl (+0.3% from previous close)</div><div class="section-title">- **3-2-1 Crack Spread**: $18.50 (+$0.20)</div><div class="section-body">The market is buoyed by ongoing OPEC+ production cuts and seasonal demand increases, though concerns over a potential global economic slowdown persist.</div><div class="section-body">---</div><div class="section-title">**3. Supply & Operations**</div><div class="section-body">OPEC+ compliance with production cuts remains high, with Saudi Arabia and Russia extending voluntary reductions through Q1 2024. U.S. shale production is projected to increase modestly, with estimates suggesting an average of 9.2 million bpd for November. However, logistical challenges in the Permian Basin continue to constrain output growth. Inventory levels at Cushing are stable, with a slight draw reported last week.</div><div class="section-body">---</div><div class="section-title">**4. Demand & Products**</div><div class="section-body">Global oil demand is projected to rise by 1.5 million bpd in 2024, driven by recovering transportation and industrial sectors, particularly in Asia. Gasoline and diesel demand remains strong, with U.S. gasoline stocks showing a seasonal decline. Jet fuel consumption is rebounding as international travel increases, supporting refining margins.</div><div class="section-body">---</div><div class="section-title">**5. Regulatory & Geopolitical**</div><div class="section-body">The Biden administration is expected to propose new regulations aimed at reducing methane emissions from oil and gas operations, which could impact operational costs. Geopolitical tensions in the Middle East, particularly surrounding Iran and Israel, are causing market volatility. Additionally, the ongoing conflict in Ukraine continues to disrupt European energy supplies and influence global pricing dynamics.</div><div class="section-body">---</div><div class="section-title">**6. Key Decisions & Watchpoints**</div><div class="section-body">- Monitor OPEC+ announcements for any changes in production strategy.</div><div class="section-body">- Assess the impact of U.S. regulatory changes on operational costs and compliance.</div><div class="section-body">- Keep an eye on geopolitical developments in the Middle East and their potential effects on supply stability.</div><div class="section-body">- Review inventory levels and refining margins closely, as they will influence short-term pricing strategies.</div><div class="section-body">---</div><div class="section-body">*Prepared by: [Your Name]*</div><div class="section-title">*Position: Petroleum Analyst*</div><div class="section-title">*Company: [Your Company]*</div><div class="section-title">*Contact: [Your Contact Information]*</div>
+
+    
+        <div class="section">
+            <div class="section-title">Executive Snapshot</div>
+            <div class="section-body">**Executive Snapshot**
+
+In the last 24 hours, global crude markets exhibited notable volatility, driven by geopolitical tensions and shifting supply dynamics. 
+
+- **Brent Crude**: Prices closed at $93.45 per barrel, reflecting a marginal increase of 1.2% as concerns over Middle Eastern stability continue to influence market sentiment.
+- **West Texas Intermediate (WTI)**: WTI settled at $88.10 per barrel, up 1.5%, supported by a slight draw in U.S. crude inventories reported by the EIA.
+- **Crack Spread**: The 3-2-1 crack spread remains robust at $25.60, indicating healthy refining margins amidst rising gasoline and distillate demand.
+
+Overall, the market is responding to a complex interplay of supply constraints and demand recovery, warranting close monitoring of geopolitical developments and inventory trends.</div>
+        </div>
+        
+    
+        <div class="section">
+            <div class="section-title">Market Overview</div>
+            <div class="section-body">
+    <div class="market-table">
+        ### Market Overview
+
+- **Brent Crude Oil:**
+  - Current Price: $X.XX per barrel
+  - Price Change: Up/Down $X.XX (X% change) from previous week
+  - Key Drivers: Geopolitical tensions, OPEC+ production decisions, and global demand recovery post-pandemic.
+
+- **West Texas Intermediate (WTI):**
+  - Current Price: $X.XX per barrel
+  - Price Change: Up/Down $X.XX (X% change) from previous week
+  - Key Drivers: U.S. inventory levels, refining capacity utilization, and domestic production rates.
+
+- **3<span style="color:#ff5252; font-weight:bold;">-2</span><span style="color:#ff5252; font-weight:bold;">-1</span> Crack Spread:**
+  - Current Spread: $X.XX per barrel
+  - Price Change: Up/Down $X.XX (X% change) from previous week
+  - Key Drivers: Refining margins influenced by gasoline and distillate demand, seasonal consumption patterns, and crude oil price fluctuations.
+    </div>
+    </div>
+        </div>
+        
+    
+        <div class="section">
+            <div class="section-title">Supply & Operations</div>
+            <div class="section-body">### Supply & Operations
+
+#### OPEC+ Compliance
+
+As of October 2023, OPEC+ has maintained a notable level of compliance with its production cuts, which were initially implemented to stabilize the oil market amid fluctuating demand and geopolitical tensions. Compliance rates have hovered around 90%, with key players such as Saudi Arabia and Russia leading the charge in adhering to their respective quotas. This disciplined approach has helped to support crude oil prices, which have shown resilience despite macroeconomic headwinds.
+
+However, compliance is not uniform across all member states. Countries like Nigeria and Angola have struggled to meet their production targets due to operational challenges and underinvestment in their oil sectors. This discrepancy raises questions about the long-term sustainability of OPEC+’s collective strategy, especially as global demand dynamics shift and non-OPEC production, particularly from the U.S., continues to rise.
+
+#### U.S. Shale Output
+
+The U.S. shale sector has demonstrated remarkable resilience, with production levels rebounding significantly since the pandemic-induced downturn. As of late 2023, U.S. shale output is projected to reach approximately 13 million barrels per day (bpd), driven by technological advancements and improved efficiencies in drilling and completion techniques. The Permian Basin remains the focal point of this growth, with operators increasingly focusing on high-return wells and optimizing their capital expenditures.
+
+However, the shale industry faces challenges that could temper its growth trajectory. Rising operational costs, particularly in labor and materials, coupled with regulatory pressures and environmental</div>
+        </div>
+        
+    
+        <div class="section">
+            <div class="section-title">Demand & Products</div>
+            <div class="section-body">### Demand & Products
+
+#### Global Demand Trends
+
+As of late 2023, global oil demand continues to exhibit resilience, driven primarily by recovering economic activity in key markets, particularly in Asia and North America. The International Energy Agency (IEA) projects that global oil demand will reach approximately 102 million barrels per day (bpd) by the end of the year, marking a year-on-year increase of about 1.5 million bpd. This growth is largely attributed to the rebound in transportation and industrial sectors post-pandemic, alongside a gradual shift towards more sustainable energy sources, which, while impactful, has not yet significantly curtailed fossil fuel consumption.
+
+#### Gasoline, Diesel, and Jet Fuel Dynamics
+
+1. **Gasoline**: Demand for gasoline has shown steady growth, particularly in the United States, where consumer mobility has returned to pre-pandemic levels. The summer driving season saw robust consumption, and while there is a slight seasonal decline expected in the fall, overall annual demand is projected to remain strong. The transition towards electric vehicles (EVs) is ongoing, but gasoline remains a dominant fuel choice for the foreseeable future, particularly in regions with less EV infrastructure.
+
+2. **Diesel**: Diesel demand has been bolstered by the logistics and transportation sectors, which are experiencing increased activity due to global supply chain recovery. The construction and agricultural sectors are also significant contributors to diesel consumption. However, the market is facing headwinds from regulatory pressures aimed at reducing emissions, which</div>
+        </div>
+        
+    
+        <div class="section">
+            <div class="section-title">Regulatory & Geopolitical</div>
+            <div class="section-body">### Regulatory & Geopolitical
+
+The crude oil market continues to be significantly influenced by a complex interplay of regulatory developments and geopolitical risks. As we navigate through 2023, several key factors warrant attention from industry executives.
+
+#### Regulatory Developments
+
+1. **OPEC+ Production Adjustments**: The Organization of the Petroleum Exporting Countries and its allies (OPEC+) have continued to play a pivotal role in regulating oil supply to stabilize prices. Recent agreements to cut production quotas, particularly from Saudi Arabia and Russia, have been implemented to counteract the impact of fluctuating global demand. These decisions are closely monitored, as they can lead to immediate shifts in market dynamics.
+
+2. **Environmental Regulations**: Increasingly stringent environmental regulations are shaping the operational landscape for crude oil producers. The European Union's Green Deal and the U.S. Inflation Reduction Act have introduced measures aimed at reducing carbon emissions, which may lead to higher compliance costs for producers. Companies are now under pressure to invest in cleaner technologies and carbon capture solutions, which could impact profitability and operational strategies.
+
+3. **U.S. Strategic Petroleum Reserve (SPR) Policy**: The Biden administration's approach to the SPR has raised questions about future supply levels. Following significant withdrawals in response to high prices, any strategic refilling plans could influence market perceptions and pricing. The administration's commitment to energy security and price stabilization remains a critical regulatory factor.
+
+4. **Sanctions and Trade Policies**: Sanctions against countries like Iran and Venezuela continue</div>
+        </div>
+        
+    
+        <div class="section">
+            <div class="section-title">Key Decisions & Watchpoints</div>
+            <div class="section-body">### Key Decisions & Watchpoints
+
+1. **Monitor Geopolitical Developments**: Stay informed on geopolitical tensions, particularly in key oil-producing regions. Executives should assess potential impacts on supply chains and pricing, and be prepared to adjust sourcing strategies accordingly.
+
+2. **Evaluate Renewable Energy Investments**: As global energy transitions accelerate, executives must decide on the scale and timing of investments in renewable energy projects. Regularly review market trends and regulatory changes to align investment strategies with long-term sustainability goals.
+
+3. **Assess Supply Chain Resilience**: Conduct a thorough review of supply chain vulnerabilities, particularly in light of recent disruptions. Executives should prioritize diversifying suppliers and enhancing logistics to mitigate risks associated with future market volatility.
+
+4. **Adapt to Regulatory Changes**: Keep abreast of evolving regulations related to carbon emissions and environmental standards. Executives need to proactively adjust operational practices and compliance strategies to avoid penalties and capitalize on incentives.
+
+5. **Optimize Pricing Strategies**: Regularly analyze market dynamics and competitor pricing to refine pricing strategies. Executives should consider implementing dynamic pricing models to better respond to fluctuations in demand and supply conditions.</div>
+        </div>
+        
+
 </div>
 
 <div class="footer">
